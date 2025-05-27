@@ -1,4 +1,6 @@
-# photon-duality-simulator
+
+# Photon Duality Simulator
+
 ## Quantum interference model simulator where a photon is modelled as either Bright or Dark state
 
 
@@ -21,3 +23,7 @@ Core Features
 - Modular for testing custom experimental setups
 
   
+**To be added:**
+ - decoherence models, 
+ - detector interactions, 
+ - entanglement support
