@@ -59,12 +59,49 @@ The cross-term `α*β⟨x|B⟩*⟨x|D⟩` generates interference patterns even w
 
 ## Installation & Usage
 
-### Requirements
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package installer)
+
+### Setup Instructions
+
+1. **Clone the repository**
 ```bash
-pip install numpy matplotlib scipy seaborn
+git clone https://github.com/[username]/photon-duality-simulator.git
+cd photon-duality-simulator
 ```
 
-### Quick Start
+2. **Create a virtual environment** (recommended)
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Simulator
+
+#### Simple Version (Recommended for beginners)
+```bash
+python dark_light_interference_simulator.py
+```
+
+This will:
+- Display a comprehensive theoretical overview
+- Generate static analysis plots
+- Show an animated phase variation
+- Optionally save animations as GIFs
+
+#### Advanced Class-Based Version
 ```python
 from photon_simulator import PhotonDualitySimulator
 
@@ -80,6 +117,30 @@ print(f"Fringe visibility: {results['visibility']:.3f}")
 
 # Create phase animation
 anim, fig = sim.create_animation('phase')
+```
+
+### Virtual Environment Management
+
+**Activate environment** (before running simulations):
+```bash
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+```
+
+**Deactivate environment** (when finished):
+```bash
+deactivate
+```
+
+**Requirements file** (`requirements.txt`):
+```
+numpy>=1.21.0
+matplotlib>=3.5.0
+scipy>=1.7.0
+seaborn>=0.11.0
 ```
 
 ## Experimental Predictions & Testable Hypotheses
@@ -117,7 +178,66 @@ The simulator demonstrates several key phenomena:
 3. **Decoherence Resistance**: Dark states show differential robustness to environmental noise
 4. **Weak Measurement Signatures**: Partial collapse scenarios produce characteristic distortions
 
-## Planned Extensions
+## Project Structure
+
+```
+photon-duality-simulator/
+├── README.md                              # This file
+├── requirements.txt                       # Python dependencies
+├── dark_light_interference_simulator.py   # Simple standalone simulator
+├── photon_simulator.py                    # Advanced class-based simulator
+├── venv/                                  # Virtual environment (created by you)
+├── examples/                              # Example scripts and notebooks
+│   ├── basic_interference.py
+│   ├── double_slit_analysis.py
+│   └── weak_measurement_demo.py
+└── docs/                                  # Additional documentation
+    ├── theory.md                          # Detailed theoretical framework
+    ├── experiments.md                     # Proposed experimental setups
+    └── api_reference.md                   # Code documentation
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**Import errors after installation:**
+```bash
+# Make sure virtual environment is activated
+source venv/bin/activate  # macOS/Linux
+# or
+venv\Scripts\activate     # Windows
+
+# Verify packages are installed
+pip list
+```
+
+**Plots not displaying:**
+```bash
+# On some systems, you may need tkinter
+sudo apt-get install python3-tk  # Ubuntu/Debian
+# or
+brew install python-tk           # macOS with Homebrew
+```
+
+**Animation not working:**
+```bash
+# Install additional multimedia support
+pip install pillow
+```
+
+### Platform-Specific Notes
+
+**Windows Users:**
+- Use `python` instead of `python3` in commands
+- Use backslashes in paths: `venv\Scripts\activate`
+
+**macOS Users:**
+- May need to install Xcode command line tools: `xcode-select --install`
+- If using M1/M2 Mac, ensure compatibility with `arch -x86_64` prefix if needed
+
+**Linux Users:**
+- May need additional packages: `sudo apt-get install python3-dev python3-tk`
 
 ### Near-term Development
 - [ ] **Entanglement Support**: Multi-photon bright/dark state correlations
@@ -168,7 +288,7 @@ If you use this simulator in your research, please cite:
 
 ## Contact
 
-[For questions, collaborations, or experimental proposals, please open an issue or contact me](dcoldeira@tuta.io).
+For questions, collaborations, or experimental proposals, please open an issue or contact [your email].
 
 ---
 
