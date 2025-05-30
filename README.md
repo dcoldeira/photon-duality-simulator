@@ -280,9 +280,9 @@ If you use this simulator in your research, please cite:
 ```bibtex
 @software{photon_duality_simulator,
   title={Photon Duality Simulator: Bright/Dark State Interference Model},
-  author={[Your Name]},
+  author={[David Coldeira]},
   year={2025},
-  url={https://github.com/[username]/photon-duality-simulator}
+  url={https://github.com/dcoldeira/photon-duality-simulator}
 }
 ```
 
