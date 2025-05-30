@@ -67,7 +67,7 @@ The cross-term `α*β⟨x|B⟩*⟨x|D⟩` generates interference patterns even w
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/[username]/photon-duality-simulator.git
+git clone https://github.com/dcoldeira/photon-duality-simulator.git
 cd photon-duality-simulator
 ```
 
@@ -271,7 +271,7 @@ This model connects to several established areas:
 
 ## License
 
-MIT License - see [LICENSE](https://opensource.org/license/mit) file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Citation
 
@@ -280,15 +280,24 @@ If you use this simulator in your research, please cite:
 ```bibtex
 @software{photon_duality_simulator,
   title={Photon Duality Simulator: Bright/Dark State Interference Model},
-  author={[David Coldeira]},
+  author={David Coldeira},
   year={2025},
-  url={https://github.com/dcoldeira/photon-duality-simulator}
+  url={https://github.com/dcoldeira/photon-duality-simulator},
+  license={MIT}
 }
 ```
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+The MIT License allows for maximum freedom in using, modifying, and distributing this software, making it ideal for scientific collaboration and research advancement.
+
 ## Contact
 
-For questions, collaborations, or experimental proposals, please open an issue or contact [your email].
+For questions, collaborations, or experimental proposals, please:
+- Open an issue on GitHub: https://github.com/dcoldeira/photon-duality-simulator/issues
+- Contact David Coldeira directly through GitHub: @dcoldeira
 
 ---
 
