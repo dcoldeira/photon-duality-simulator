@@ -155,6 +155,11 @@ def run_comprehensive_analysis():
     print("=" * 60)
     
     analyzer = DoubleslitAnalyzer()
+
+    # #Example variations to explore different scenarios
+    # analyzer = DoubleslitAnalyzer(slit_separation=4.0)  # Wider separation
+    # analyzer = DoubleslitAnalyzer(slit_width=0.1)       # Narrower slits
+    # analyzer = DoubleslitAnalyzer(slit_separation=1.0, slit_width=0.8)  # Different combo
     
     # Create comprehensive plot
     fig, axes = plt.subplots(2, 3, figsize=(18, 12))
