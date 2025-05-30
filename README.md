@@ -271,7 +271,7 @@ This model connects to several established areas:
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](https://opensource.org/license/mit) file for details.
 
 ## Citation
 
